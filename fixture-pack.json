@@ -1,0 +1,44 @@
+{
+  "name": "veroptima-qa-fixture-files",
+  "version": "0.1.0",
+  "family": "fixture-pack",
+  "domain": "files",
+  "contractVersion": "0.1.0",
+  "entry": "./src/index.ts",
+  "locales": [],
+  "kinds": [
+    {
+      "name": "pdf-doc",
+      "outputs": "file",
+      "params": {
+        "pages": "number (default 1)",
+        "text": "string (default \"Documento\")"
+      }
+    },
+    {
+      "name": "image-jpg",
+      "outputs": "file",
+      "params": {
+        "width": "number (default 16)",
+        "height": "number (default 16)",
+        "label": "string (default \"\")"
+      }
+    },
+    {
+      "name": "image-png",
+      "outputs": "file",
+      "params": {
+        "width": "number (default 16)",
+        "height": "number (default 16)",
+        "label": "string (default \"\")"
+      }
+    },
+    {
+      "name": "zip",
+      "outputs": "file",
+      "params": {
+        "entries": "Array<{ name: string, content: string }>"
+      }
+    }
+  ]
+}
